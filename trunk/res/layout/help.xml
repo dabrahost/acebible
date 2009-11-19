@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.gyc.ace.bible"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+
+	<Button android:id="@+id/btnHelpRtn" android:layout_width="fill_parent"
+		android:text="返回" android:layout_height="wrap_content"
+		android:padding="0sp" android:textSize="12sp" />
+
+	<TextView android:id="@+id/textview4help" android:autoLink="all"
+		android:linksClickable="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="多数功能由菜单提供\n\n向前向后使用 DPad/Track Ball/界面上按钮\n\n长按圣经文本/书签文本/查询结果有弹出菜单,\n\n方便 编辑书签、定位、发短信等操作\n\n使用本软件产生的全部风险、费用，明确或者隐含的，均由使用者承担\n\n有错误、建议及其它要求，请联系 \n\n yc.guan@gmail.com\n\n 退出本屏幕 请按上面返回按钮/手机退出键"
+		android:padding="5sp" android:textSize="15sp" />
+
+
+</LinearLayout>

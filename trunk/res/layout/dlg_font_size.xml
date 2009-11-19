@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:minWidth="120px" android:layout_height="fill_parent">
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<Button android:id="@+id/fs_ok" android:layout_weight="1"
+			android:text="确定" android:layout_width="fill_parent"
+			android:textSize="12sp" android:layout_height="wrap_content" />
+
+		<Button android:id="@+id/fs_cancel" android:layout_weight="1"
+			android:text="取消" android:layout_width="fill_parent"
+			android:textSize="12sp" android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+
+	<SeekBar android:id="@+id/fs_seek" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:max="40"
+		android:paddingLeft="10px" android:paddingRight="10px" />
+
+
+	<TextView android:id="@+id/fs_demo" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="测 试 文 本" />
+
+</LinearLayout>

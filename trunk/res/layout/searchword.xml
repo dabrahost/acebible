@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.gyc.ace.bible"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<com.admob.android.ads.AdView android:id="@id/ad"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		admobsdk:backgroundColor="#000000" admobsdk:textColor="#FFFFFF"
+		admobsdk:keywords=" Book Movie Bible God Read Only Maria Christ Genesis reading"
+		android:layout_alignParentTop="true" />
+	<!-- admobsdk:testing="true" -->
+
+	<Button android:id="@+id/btn_search_return"
+		android:layout_width="fill_parent" android:text="返回"
+		android:layout_height="wrap_content" android:padding="0sp"
+		android:textSize="12sp" />
+
+
+
+
+	<Spinner android:id="@+id/search_spinner" android:layout_width="fill_parent"
+		android:layout_height="40px" android:layout_centerHorizontal="true" />
+
+	<EditText android:id="@+id/search_word" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:minHeight="0sp"
+		android:text="输入查询词条" android:padding="0sp" android:textSize="15sp" />
+
+
+	<Button android:id="@+id/btn_search" android:layout_width="fill_parent"
+		android:text="查询" android:layout_height="wrap_content"
+		android:padding="0sp" android:textSize="12sp" />
+
+	<ProgressBar android:id="@+id/progress_search"
+		style="?android:attr/progressBarStyleHorizontal" android:layout_width="fill_parent"
+		android:layout_height="40px" android:color="#00f" />
+
+
+
+</LinearLayout>

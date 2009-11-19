@@ -1,3 +1,18 @@
+/* 
+ * Copyright (C) 2009 Guan YC yc.guanATgmail.com
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.gyc.ace.bible;
 
 import java.util.regex.Matcher;
@@ -36,7 +51,7 @@ public class Adapter4MainList extends BaseAdapterNew {
 
 			final String xx = charSequence.toString();
 
-			//String pre = xx.substring(0, start).trim();
+			// String pre = xx.substring(0, start).trim();
 			String ci = xx.substring(start, end);
 			String post = xx.substring(end);
 

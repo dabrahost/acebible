@@ -1,3 +1,18 @@
+/* 
+ * Copyright (C) 2009 Guan YC yc.guanATgmail.com
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.gyc.ace.bible.db;
 
 import java.util.ArrayList;
@@ -119,11 +134,11 @@ public class FavorDataHelper extends SQLiteOpenHelper {
 			Mark mark = copyMarkFromCursor(cursor);
 			result.add(mark);
 		}
-		
+
 		try {
 			cursor.close();
 		} catch (Exception e) {
-			//e.printStackTrace();
+			// e.printStackTrace();
 		}
 
 		return result;
@@ -156,7 +171,9 @@ public class FavorDataHelper extends SQLiteOpenHelper {
 
 	private MarkCursor getMarkCursor() {
 		String sql = "SELECT id, volume, chapter, subChapter, tags, createdate  "
-				+ " FROM BibleMarks  " + " WHERE  0=0  " + " ORDER BY volume, chapter ";
+				+ " FROM BibleMarks  "
+				+ " WHERE  0=0  "
+				+ " ORDER BY volume, chapter ";
 
 		SQLiteDatabase d = getReadableDatabase();
 
@@ -179,7 +196,7 @@ public class FavorDataHelper extends SQLiteOpenHelper {
 		try {
 			cursor.close();
 		} catch (Exception e) {
-			//e.printStackTrace();
+			// e.printStackTrace();
 		}
 
 		return result;
@@ -236,8 +253,8 @@ public class FavorDataHelper extends SQLiteOpenHelper {
 		map.put("createdate", createdate);
 
 		try {
-			return getWritableDatabase().insert(FavorDataHelper.TABLE_NAME, null,
-					map);
+			return getWritableDatabase().insert(FavorDataHelper.TABLE_NAME,
+					null, map);
 		} catch (SQLException e) {
 			Log.e("Error writing new job", e.toString());
 		}
@@ -270,8 +287,8 @@ public class FavorDataHelper extends SQLiteOpenHelper {
 		String[] whereArgs = new String[] { Long.toString(mark.getId()) };
 
 		try {
-			getWritableDatabase().update(FavorDataHelper.TABLE_NAME, map, "id=?",
-					whereArgs);
+			getWritableDatabase().update(FavorDataHelper.TABLE_NAME, map,
+					"id=?", whereArgs);
 		} catch (SQLException e) {
 			Log.e("Error writing new job", e.toString());
 		}

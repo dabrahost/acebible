@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.gyc.ace.bible"
+	android:id="@+id/layout_main" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+
+	<LinearLayout android:id="@+id/listcontentsbuttons"
+		android:orientation="horizontal" android:gravity="bottom"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom='true'>
+		<Button android:id="@+id/btnpre" android:layout_width="160px"
+			android:text="向前 " android:layout_height="60px" android:padding="5px" />
+
+		<Button android:id="@+id/btnnext" android:layout_width="160px"
+			android:text="向后 " android:layout_height="60px" android:padding="5px" />
+	</LinearLayout>
+
+
+	
+	<ListView android:id="@+id/listcontents" android:gravity="top|fill_vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:drawSelectorOnTop="false" android:divider="#ff99ffcc"
+		android:dividerHeight="1sp" android:layout_alignLeft="@id/listcontentsbuttons"
+		android:layout_above="@id/listcontentsbuttons"
+		android:layout_alignParentTop='true' />
+
+</RelativeLayout>
+    

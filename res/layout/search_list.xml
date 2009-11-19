@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.gyc.ace.bible"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<com.admob.android.ads.AdView android:id="@id/ad"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			admobsdk:backgroundColor="#000000" admobsdk:textColor="#FFFFFF"
+						admobsdk:keywords=" Book Movie Bible God Read Only Maria Christ Genesis reading"
+			android:layout_alignParentTop="true" />
+
+		<Button android:id="@+id/btnRtnFromSearch"
+			android:layout_width="fill_parent" android:text="返回"
+			android:layout_height="40px" />
+
+	</LinearLayout>
+
+
+	<ListView android:id="@+android:id/list_search"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:drawSelectorOnTop="false" android:dividerHeight="5sp" />
+
+
+
+
+</LinearLayout>

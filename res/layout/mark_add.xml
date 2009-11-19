@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.gyc.ace.bible"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ScrollView android:id="@+id/mark_add_scroll"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="1.0">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<com.admob.android.ads.AdView
+				android:id="@+id/ad" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" admobsdk:backgroundColor="#000000"
+				admobsdk:textColor="#FFFFFF" 			admobsdk:keywords=" Book Movie Bible God Read Only Maria Christ Genesis reading"
+				android:layout_alignParentTop="true" />
+
+			<Button android:id="@+id/btnSaveMarkRtn" android:layout_width="fill_parent"
+				android:text="返回" android:layout_height="wrap_content"
+				android:padding="0sp" android:textSize="12sp" />
+
+			<TextView android:id="@+id/markIndex" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="书签索引"
+				android:padding="2sp" android:textSize="20sp" android:textColor="#FFFF9900" />
+
+			<TextView android:id="@+id/markContent"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:text="书签内容" android:padding="2sp" android:textSize="14sp"
+				android:textColor="#FF33CC33" />
+
+			<EditText android:id="@+id/mark_tags" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:minHeight="30sp"
+				android:text="输入感想" android:padding="4sp" android:textSize="14sp" />
+
+			<Button android:id="@+id/btnSaveMark" android:layout_width="fill_parent"
+				android:text="保存" android:layout_height="wrap_content"
+				android:padding="0sp" android:textSize="12sp" />
+
+			<Button android:id="@+id/btnSaveMark2List"
+				android:layout_width="fill_parent" android:text="查看所有书签"
+				android:layout_height="wrap_content" android:padding="0sp"
+				android:textSize="12sp" />
+
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

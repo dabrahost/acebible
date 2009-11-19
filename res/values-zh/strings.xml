@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MainActivity!</string>
+	<string name="app_name">聖經</string>
+	<string name="ac_name">你的話是導引我的燈 是我人生路上的光 </string>
+
+
+	<string name="db_create">
+		CREATE TABLE BibleMarks ( id INTEGER PRIMARY KEY
+		AUTOINCREMENT, volume TEXT, chapter INTEGER, subchapter INTEGER, tags
+		TEXT, createdate INTEGER);
+    </string>
+
+	<string name="db_update">
+		DROP TABLE IF EXISTS BibleMarks
+    </string>
+
+</resources>

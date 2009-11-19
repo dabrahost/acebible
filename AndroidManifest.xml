@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.gyc.ace.bible" android:versionName="2.0.3"
+	android:versionCode="8">
+	<application android:icon="@drawable/cross" android:label="aceBible">
+		<activity android:name=".MainActivity" android:label="aceBible">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".HelpActivity" android:label="帮助">
+		</activity>
+
+		<activity android:name=".SearchActivity" android:label="查询">
+		</activity>
+
+
+		<activity android:name=".MarkActivity" android:label="书签">
+		</activity>
+
+		<receiver android:name=".alarm.AlarmReceiver"
+			android:process=":remote" />
+
+		<meta-data android:value="a14a97d04083a62" android:name="ADMOB_PUBLISHER_ID" />
+
+
+
+	</application>
+
+
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+	<!--
+		android.permission.ACCESS_NETWORK_STATE
+		android.permission.ACCESS_WIFI_STATE
+		android.permission.CHANGE_COMPONENT_ENABLED_STATE
+		android.permission.CHANGE_NETWORK_STATE
+	-->
+
+
+
+	<uses-sdk android:minSdkVersion="2" />
+</manifest> 
